@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Yusuf Zarbali – Personal Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+</head>
+<body class="light">
+  <nav class="navbar">
+    <div class="nav-logo">YZ</div>
+    <ul class="nav-links">
+      <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
+      <li><a href="#" onclick="showPage('blog')" class="nav-link">Blog</a></li>
+      <li><a href="#" onclick="showPage('about')" class="nav-link">About</a></li>
+    </ul>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+  </nav>
+  <main id="page-home" class="page active">
+    <section class="hero">
+      <h1 class="hero-title">Hi, I'm Yusuf 👋</h1>
+      <p class="hero-bio">
+        I'm a first-year IT student at Baku Engineering University with a big dream — to become a renowned surgeon. I love mathematics, logic puzzles, and learning new languages. This blog is where I document my journey, share my thoughts, and grow in public.
+      </p>
+      <p class="hero-bio">
+        Born in Qaratapa village, Sabirabad, I've always believed that hard work and curiosity can take you anywhere. Welcome to my corner of the internet!
+      </p>
+      <div class="social-links">
+        <a href="#" class="social-btn">Twitter</a>
+        <a href="#" class="social-btn">GitHub</a>
+        <a href="#" class="social-btn">LinkedIn</a>
+      </div>
+    </section>
+
+    <section class="latest-articles">
+      <h2 class="section-title">Latest Articles <span class="title-line"></span></h2>
+      <ul class="article-list" id="home-article-list"></ul>
+      <a href="#" class="view-all" onclick="showPage('blog')">View all articles →</a>
+    </section>
+
+    <footer class="footer">Made with ❤️ and ☕ &nbsp;·&nbsp; Yusuf Zarbali</footer>
+  </main>
+
+  <main id="page-blog" class="page">
+    <section class="blog-header">
+      <h1 class="page-heading">Blog</h1>
+      <p class="page-sub">Thoughts, stories and ideas from my journey.</p>
+    </section>
+    <ul class="article-list full" id="blog-article-list"></ul>
+    <footer class="footer">Made with ❤️ and ☕ &nbsp;·&nbsp; Yusuf Zarbali</footer>
+  </main>
+
+  <main id="page-about" class="page">
+    <section class="about-section">
+      <h1 class="page-heading">About Me</h1>
+      <p>My name is <strong>Zarbali Yusuf Ilham oglu</strong>. I was born on <strong>January 2, 2008</strong> in Qaratapa village, Sabirabad district, Azerbaijan.</p>
+      <p>From a very early age I was known as a calm, kind, intelligent and tidy child. I started talking at just one year old, and by one and a half I could already recite poems, fairy tales, and even surahs from the Holy Quran by heart.</p>
+      <p>Before starting school I already knew how to read and write. My pre-school teacher, <strong>Zərife Heyderova</strong>, played a big role in my early development. I currently study at School No. 25.</p>
+      <p>My favourite subjects are <strong>Mathematics</strong>, <strong>English</strong>, and <strong>Life Science</strong>. I regularly participate in knowledge competitions and enjoy playing chess and solving logic puzzles in my free time.</p>
+      <p>My greatest joy is spending time with my family. My father, İlham bəy, takes us on trips around Azerbaijan's beautiful regions every summer and to cinemas, theatres and entertainment centres in winter.</p>
+      <p>My <strong>role model is my father</strong>. I promised him I would study hard and become a highly skilled surgeon. I plan to continue my education abroad and master several foreign languages.</p>
+      <p>If history remembers me, I want to be remembered as a patriotic son like <strong>Mubariz Ibrahimov</strong>, <strong>Ramil Safarov</strong>, and <strong>Chingiz Mustafayev</strong> — people who left a true mark on history.</p>
+      <p>I am now a proud student of the <strong>IT Faculty at Baku Engineering University</strong>, taking the first steps toward my big dreams. 🎓</p>
+      <blockquote class="quote">"I want to leave a mark on history — not just as a surgeon, but as a patriot."<br/><span>— Yusuf Zarbali</span></blockquote>
+    </section>
+    <footer class="footer">Made with ❤️ and ☕ &nbsp;·&nbsp; Yusuf Zarbali</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
